@@ -1,8 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function page() {
   return (
     <>
+      <Image
+      src="/profile.png"
+      width={500}
+      height={500}
+      alt="Picture of the author"
+      />
     {/* ======= Header ======= */}
     <header id="header" className="header fixed-top d-flex align-items-center">
       <div className="d-flex align-items-center justify-content-between">
@@ -651,7 +658,7 @@ export default function page() {
                           <td>$4,366</td>
                         </tr>
                         <tr>
-                          <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt /></a></th>
+                          <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt /><img/></a></th>
                           <td><a href="#" className="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
                           <td>$32</td>
                           <td className="fw-bold">63</td>
